@@ -9,7 +9,8 @@ const CaeserCipher = () => {
     let answer = '';
     const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
     for (let i = 0; i < input.length; i++) {
-      let letter = input[i];
+      let value = input[i];
+      let letter = value.toLowerCase();
       if (alphabet.indexOf(letter) < 0) {
         answer += letter;
         continue;
