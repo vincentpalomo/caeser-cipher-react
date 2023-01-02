@@ -1,8 +1,13 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import { CaeserCipher } from './components';
 
 const App = () => {
-  return <div>Hello World</div>;
+  return (
+    <div>
+      <CaeserCipher />
+    </div>
+  );
 };
 
 const container = document.getElementById('app');
