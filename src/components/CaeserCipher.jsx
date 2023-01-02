@@ -5,10 +5,6 @@ const CaeserCipher = () => {
   const [input, setInput] = useState('jinx');
   const [shift, setShift] = useState(1);
 
-  useEffect(() => {
-    caeserCipher(input, shift);
-  }, [input, shift]);
-
   function caeserCipher(input, shift) {
     let answer = '';
     const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
@@ -23,6 +19,11 @@ const CaeserCipher = () => {
     }
     return answer;
   }
+
+  useEffect(() => {
+    let answer = caeserCipher(input, shift);
+    setEncode(answer);
+  }, [input, shift]);
 
   return <div>CaeserCipher</div>;
 };
