@@ -1,6 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { CaeserCipher } from './components';
+import style from './global.css';
 
 const App = () => {
   return (
