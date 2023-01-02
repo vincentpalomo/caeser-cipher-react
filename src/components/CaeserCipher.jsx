@@ -42,7 +42,7 @@ const CaeserCipher = () => {
             className='input input-bordered input-primary w-full max-w-xs mb-3'
             onChange={(e) => setInput(e.target.value)}
           />
-          <p>Shift letters:</p>
+          <p className='my-3'>Shift letters by using the slider:</p>
           <input
             type='range'
             min='0'
@@ -59,7 +59,20 @@ const CaeserCipher = () => {
             <span>|</span>
             <span>|</span>
           </div>
-          <div className='card'>Encoded: {encode}</div>
+          <div className='card bg-neutral mt-3 h-50'>
+            <div className='card-body text-center'>
+              <div className='card-title'>Encoded:</div>
+              <p>{encode}</p>
+              <div className='bg-neutral'>
+                <a
+                  className='link'
+                  href='https://github.com/vincentpalomo/caeser-cipher-react'
+                >
+                  Github
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
